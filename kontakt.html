@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Foto & Video Vadaski</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+<header id="header">
+	<div class="logo">
+		<a href="index.html"><img src="img/logo.png"></a>
+	</div>
+	<input type="checkbox" id="chk">
+	<label for="chk" class="show-menu-btn">
+		<i class="fas fa-bars"></i>
+	</label>
+
+	<ul class="menu">
+		<a href="index.html">Naslovna</a>
+		<a href="onama.html">O nama</a>
+		<a href="galerija.html">Galerija</a>
+		<a href="#">Kontakt</a>
+		<a href="json.html">Clanovi Tima</a>
+		<label for="chk" class="hide-menu-btn">
+			<i class="fas fa-times"></i>
+		</label>
+	</ul>
+</header>
+
+<div>
+	<h1 class="textcover2">KONTAKT</h1>
+	<img src="img/kontakt.jpg" style="filter: brightness(84%);" class="cover">  
+</div>
+
+<div class="has-bg-img4">
+<div class="usluge-div">
+	<div class="border2">
+		<i class="fas fa-phone-square kontakt-ikonica"></i><br>
+		<h2> Adresa </h2><br>
+		<p> Telefon 1: 062 5421 2452</p><br>
+		<p> Telefon 2 063 5421 2456</p>
+	</div>
+	<div class="border2">
+		<i class="fas fa-map-marker-alt kontakt-ikonica"></i><br>
+		<h2> Adresa </h2><br>
+		<p> Vrbas, Gavrila Pincipa 4/a </p>
+	</div>
+
+	<div class="border2">
+		<i class="fas fa-envelope-square kontakt-ikonica"></i><br>
+		<h2>E-mail</h2><br>
+		<p>vadaski@yahoo.com</p>
+	</div>
+</div>
+
+<center><p class="naslov-index"> Zakazite vas termin na vreme </center>
+
+
+
+<div class="forma">
+  <form action="#" onsubmit="return validation()">
+
+    <label>Ime i Prezime *</label>
+    <input type="text" id="txtName" placeholder="Vase ime i prezime...">
+
+    <label>Broj telefona *</label>
+    <input type="text" id="txtNumber" placeholder="Vas broj telefona">
+
+    <label>E-mail *</label>
+    <input type="text" id="txtEmail" placeholder="Vas e-mail">
+    
+
+    <label>Proslava</label>
+    <select name="proslava" id="proslava">
+      <option value="Izaberi Proslavu" id="Izaberi Proslavu">Izaberi Proslavu</option>
+      <option value="Krstenje" id="Krstenje">Krstenje</option>
+      <option value="Rodjendan" id="Rodjendan">Rodjendan</option>
+      <option value="Svadba" id="Svadba">Svadba</option>
+      <option value="Ostalo" id="Ostalo">Ostalo</option>
+	</select>
+
+    <label>Datum</label>
+    <input type="date" id="date"><br><br>
+  
+
+    <label for="subject">Poruka</label>
+    <textarea placeholder="Vasa poruka" style="height:200px" id="poruka"></textarea>
+    <p id="rezultat"></p>
+    
+
+    
+    <input type="submit" name="submit" value="Posalji" id="button" class="button">
+
+ </form>
+
+ 	<div> 
+
+		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.064506904223!2d19.639686915900366!3d45.56914137910243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b4552cf5a1dff%3A0xea690da59418bf7!2sUniverexport!5e0!3m2!1shr!2srs!4v1549271347096" width="100%" height="580" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+
+</div>
+<button class="button2" onclick="saveValues()">Sacuvaj Podatke</button>
+<button  class="button2" onclick="loadValues()">Ocitaj Podatke</button>
+
+</div>
+
+<footer>
+	<div class="futer">
+		<div class="futer-grid">
+			<div>
+				<h3 class="naslov-futer">NAVIGACIONI MENI:</h3><br>
+				<nav>
+				<ul>
+					<li><a href="index.html">Naslovna</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+				</nav>
+			</div>
+
+			<div>
+				<h3 class="naslov-futer">KONTAKT</h3><br>
+				<p><b>Adresa</b> Vrbas, Gavrila Pincipa 4/a</p><br>
+				<p><b>Telefon </b>:011 2321 336</p><br>
+				<p><b>Mobilni telefon: </b>062 3524 124</p><br>
+				<p><b>Email: </b>vadaski@yahoo.com</p><br>
+			</div>
+			<div>
+				<h3 class="naslov-futer">PRATITE NAS</h3><br>
+					<a href="https://www.facebook.com/profile.php?id=100008985492168&epa=SEARCH_BOX"><i class="fab fa-facebook-f ikonice"></i></a>
+					<a href="https://vimeo.com/user53604087"><i class="fab fa-vimeo ikonice"></i></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+<script src="javascript.js"></script>
+</html>

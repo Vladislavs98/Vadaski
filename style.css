@@ -1,0 +1,677 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:arial;
+	font-weight:bold;	
+	
+}
+
+
+
+#header{
+	height: 100px;
+	background: #ecf0f1;
+	z-index: 155;
+	color:#636e72;
+	overflow-y: hidden;
+	width: 100%;
+	transition:all 0.4s;
+}
+.logo{
+	float: left;
+}
+.menu{
+	float:right;
+	line-height: 100px;
+	letter-spacing:0.5px;
+}
+.menu a{
+	color:#636e72;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 15px;
+	transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+	transition: 0.4s;
+	font-size: 30px;
+	display: none;
+}
+.show-menu-btn{
+	float: right;
+	line-height: 100px;
+	margin-top:8px;
+}
+.menu a:hover{
+	background-color:#8c7ae6;
+	border:4px solid #8c7ae6;
+	padding-top:14px;
+	padding-bottom: 14px;
+	color:white;
+}
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+	color:#8c7ae6;
+}
+#chk{
+	visibility: hidden;
+}
+.cover {
+  width: 100%;
+}
+.textcover{
+	position: absolute;	
+	font-size:54px;
+	color:white;
+	z-index:2;
+	font-family:Georgia;
+	font-style: italic;
+	text-shadow: 2px 2px 8px black;
+	margin-top:90px;
+	margin-left: 37.6vw;
+}
+.textcover{
+  animation-duration: 4s;
+  animation-name: dolazeci-txt;
+}
+@keyframes dolazeci-txt {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 38%;
+    width: 100%;
+  }
+}
+.cilj-div {
+	width: 100%;
+	height: 70px;
+	background-color:#8c7ae6;
+	margin-top:-4px;
+}
+.ulozili-text {
+	text-align: center;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 30px;
+	color:white;
+	margin:15px;
+}
+.has-bg-img{
+    position: relative;
+}
+.has-bg-img:after {
+    content:'';
+    background: url(img/proba.jpg);
+    background-repeat:  no-repeat;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.3;
+    background-size: cover;
+}
+.naslov-index{
+	margin-bottom: 30px;
+	font-size: 3.0vw;
+	font-family:Georgia;
+	font-style: italic;
+	color:#2f3640;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.usluge-div{
+	display: grid;
+	grid-template-columns:33.33% 33.33% 33.33%;
+	grid-gap:10px;
+}
+.border{
+	text-align:center;
+	border-left:5px solid #a29bfe;
+	padding:20px;
+	border-radius: 30px;
+}
+.usluge-naslov{
+	font-family: Georgia;
+	font-style: italic;
+	color:#2f3640;
+	font-size: 25px;
+	padding-bottom: 14px;
+}
+.usluge-text{
+	color: #2f3640;
+	font-style:italic;
+}
+.width{
+	width: 90%;
+	margin:auto;
+}
+.radovi {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-bottom:10px;
+}
+.width2{
+	width: 95%;
+	margin:auto;
+}
+.male-slike{
+	width: 23vw;
+	border-radius: 10px;
+	margin-bottom: 7px;
+}
+.button {
+  background-color: #8c7ae6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top:18px;
+  transition-duration: 0.7s;
+  
+}
+.button2 {
+  background-color: #8c7ae6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top:18px;
+  transition-duration: 0.7s;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  
+}
+
+.button:hover{
+  background-color: white; 
+  color: #8c7ae6; 
+  border: 4px solid #8c7ae6;
+}
+.button2:hover{
+  background-color: white; 
+  color: #8c7ae6; 
+  border: 4px solid #8c7ae6;
+}
+.o-nama{
+	font-size: 26px;
+	margin-left: 8vw;
+	margin-right: 8vw;
+	font-family:Georgia;
+	font-style: italic;
+}
+.futer{
+	width: 100%;
+	background-color:#2f3640;
+	color:white;
+	overflow-y: hidden;
+}
+.futer-grid{
+	display: grid;
+	grid-template-columns:30% 30% 40%;
+	margin-left:20%;
+	padding-top:30px;
+}
+.naslov-futer {
+	color: #8c7ae6;
+}
+nav ul {
+  	margin: 0;
+  	padding:0;
+  	list-style: none;
+  	}
+
+nav a {
+  	color:white;
+  	text-decoration: none;
+  	}
+
+nav a:hover {
+  	color:#8c7ae6;
+  	text-decoration: none;
+  	transition: 0.4s;
+  	margin-left:10px;
+  	}
+.ikonice:hover{
+ 	color:#8c7ae6;
+ 	transition: 0.6s;
+ }
+.ikonice{
+	color:white;
+	font-size: 30px;
+	padding-left:15px;
+	padding-right: 10px;
+	overflow-y: hidden;
+}
+.has-bg-img2{
+    position: relative;
+}
+.has-bg-img2:after {
+    content:'';
+    background: url(img/posluzice.jpg);
+    background-repeat:  no-repeat;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.3;
+    background-size: cover;
+}
+.textcover2{
+	position: absolute;	
+	font-size:100px;
+	color:white;
+	z-index:2;
+	font-family:Georgia;
+	font-style: italic;
+	text-shadow: 2px 2px 8px black;
+	margin-left: 38vw;
+	margin-top:20vw;
+}
+.video-grid{
+	display: grid;
+	grid-template-columns:50% 50%;
+	text-align: center;
+}
+iframe{
+	margin-bottom: 40px;
+}
+.ikonice2{
+	color:#8c7ae6;
+	font-size: 50px;
+	padding-left:15px;
+	padding-right: 10px;
+	overflow-y: hidden;
+}
+.ikonice2:hover{
+	font-size: 60px;
+	transition: 0.4s;
+}
+.vimeo-text{
+	font-size:20px;
+	color:#8c7ae6;
+	font-family: Georgia;
+	font-style: italic;
+}
+.has-bg-img3{
+    position: relative;
+    margin-top:-4px;
+}
+.has-bg-img3:after {
+    content:'';
+    background: url(img/slide9.jpg);
+    background-repeat:  no-repeat;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.3;
+    background-size: cover;
+}
+.kontakt-ikonica{
+	font-size: 80px;
+	color:#8c7ae6;
+	text-align: center;
+}
+.border2{
+	text-align:center;
+	border:5px solid #a29bfe;
+	padding: 20px;
+	border-radius: 30px;
+	margin:40px;
+}
+.forma {
+	display: grid;
+	grid-template-columns:40% 60%;
+	grid-gap:10px;
+	grid-auto-rows: minmax(100px,auto);
+  	border-radius: 5px;
+  	padding: 20px;
+  	overflow-x: hidden;
+}
+.mapa {
+	margin-left:20px;
+	margin-top:25px;
+}
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.has-bg-img4{
+    position: relative;
+    margin-top:-4px;
+}
+.has-bg-img4:after {
+    content:'';
+    background: url(img/7.jpg);
+    background-repeat:  no-repeat;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.15;
+    background-size: cover;
+}
+.naslov-index2{
+	margin-bottom: 30px;
+	font-size: 3.0vw;
+	font-family:Georgia;
+	font-style: italic;
+	color:#2f3640;
+	padding-top: 20px;
+	float:left;
+	margin-left: 26px;
+}
+
+/* novo ///////////////////////////////////////////////////////////////////*/
+
+
+#rezultat {
+	color:red;
+	padding-bottom: 8px;
+}
+
+.fa{
+	font-size:50px;
+	
+	}
+
+
+
+.carousel-container {
+	width: 97%;
+	margin:auto;
+	overflow: hidden;
+	position: relative;
+	
+
+}
+.carousel-slide {
+	display: flex;
+	width: 120%;
+	height: 900px;
+	background-image: cover;
+}
+
+#prevBtn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 2%;
+	font-size: 35px;
+	color: white;
+	cursor: pointer;
+}
+
+#nextBtn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 2%;
+	font-size: 35px;
+	color: white;
+	cursor: pointer;
+}
+
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.clan {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #FFF;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+
+.clan h4 {
+  margin: 0 0 6px 0;
+}
+
+.osoba-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+}
+
+.pet-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.species {
+  font-size: .9rem;
+  color: #888;
+  vertical-align: middle;
+}
+
+.foods-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 17px;
+  font-size: .85rem;
+  line-height: 1.5;
+}
+
+.footer2 {
+  font-size: .7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+
+	.textcover{
+		font-size: 46px;
+		margin-left: 39vw;
+		margin-top:70px;
+	}
+	.border{
+		padding: 15px;
+	}
+	.width {
+		width: 95%;
+	}
+
+	@keyframes dolazeci-txt{
+ 	 from {
+    margin-left: 100%;
+    width: 300%; 
+ 	 }
+
+ 	 to {
+    margin-left: 40%;
+    width: 100%;
+  	}
+}
+}
+@media screen and (max-width: 912px) {
+
+	.textcover{
+		font-size: 45px;
+		margin-left: 30vw;
+		margin-top:50px;
+	}
+	.usluge-div{
+		display: inline-block;
+		width: 100%;		
+	}
+	.border{
+		margin-bottom: 20px;
+		margin-left:5px;
+	}
+	.naslov-index{
+		font-size: 40px;
+	}
+	.radovi {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	}
+	.male-slike{
+	width: 98%;
+	margin-bottom: 5px;
+	}
+	.o-nama{
+	font-size: 23px;
+	margin-left: 100px;
+	margin-right: 100px;	
+	}
+	.ulozili-text{
+	margin-top:18px;
+	font-family: Georgia;
+	font-style: italic;
+	font-size:24px;
+	margin-left:15px;
+	margin-right:15px;
+	}
+	.naslov-futer {
+	padding-right: 5px;
+	}
+	nav ul {
+  	display: inline-block;
+  	}
+
+	@keyframes dolazeci-txt{
+from {
+    margin-left: 100%;
+    width: 300%; 
+  	}
+
+ to {
+    margin-left: 30%;
+    width: 100%;
+  	}
+}
+	.textcover2{
+	margin-left: 28vw;
+	}
+	.forma{
+	display: block;
+}
+	.video-grid{
+	grid-template-columns:100%;
+	display: inline-block;
+}
+}
+@media screen and (max-width: 768px) {
+	.show-menu-btn,.hide-menu-btn{
+		display:block;
+	}
+	.menu{
+		position: fixed;
+		height: 30%;
+		background: #333;
+		left: -40%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 0.7s;
+		z-index: 3;	
+	}
+	.menu a{
+		display: block;
+		padding: 20px;
+	}
+	.hide-menu-btn{
+		position: absolute;
+		top: 40px;
+		right: 22px;
+	}
+	#chk:checked ~ .menu{
+		right: 0px;
+	}
+	.textcover{
+		font-size: 30px;
+		margin-left: 21vw;
+		margin-top:35px;
+	}
+	.radovi {
+	display: grid;
+	grid-template-columns:100%;
+	}
+	.male-slike{
+	width: 100%;
+	margin:auto;
+	margin-bottom: 5px;
+	}
+	.menu a:hover{
+		border:0px;
+		margin-left:35px;
+	}
+	.o-nama{
+	font-size: 20px;
+	margin-left: 25px;
+	margin-right: 5px;
+	}
+	.ulozili-text{
+	margin-top:18px;
+	font-family: Georgia;
+	font-style: italic;
+	font-size:20px;
+	}
+	.futer-grid{
+  	display: inline-block;
+  	margin-top:0px;
+  	}
+    nav ul {
+  	list-style: none;
+  	}
+
+	@keyframes dolazeci-txt{
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 22%;
+    width: 100%;
+  }
+}
+
+.textcover2{
+	font-size: 40px;
+	margin-left: 30vw;
+}
+.forma{
+	display: block;
+}
+
+.video-grid{
+	grid-template-columns:50%;
+	display: inline-block;
+	margin: auto;
+
+}
+}
